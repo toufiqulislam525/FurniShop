@@ -1,28 +1,39 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Navbar, Sidebar, Footer } from './components'
 
-import Home from './routes/home/home_component';
-import './App.css';
-import About from './routes/about/about_component';
-import Product from './routes/product/product_component';
-import Products from './routes/products/products_component';
-import Contact from './routes/contact/contact_component';
-import Cart from './routes/cart/cart_component';
+// import Testing from './testing'
+import {
+  Home,
+  Products,
+  SingleProduct,
+  About,
+  Cart,
+  Error,
+  Checkout,
+  Private
+} from './pages';
+
 
 function App() {
-  return (
-    <BrowserRouter>
+  return(
+    <Router>
+      <Navbar />
+      <Sidebar/>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/products' element={<Products/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/product' element={<Product/>} />
-        <Route path='/cart' element={<Cart/>} />
-
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/cart' element={<Cart />}/>
+        <Route path='/products/*' element={<Products />}/>
+        <Route path='/checkout' element={<Checkout />}/>
+        <Route path='*' element={<Error />}/>
+        
       </Routes>
-    
-    </BrowserRouter>
-  );
+      <Footer/>
+
+    </Router>
+        
+  ); 
 }
 
-export default App;
+export default App
