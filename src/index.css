@@ -198,7 +198,7 @@ p {
   margin-right: auto;
 }
 .page-100 {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 13rem);
   padding: 5rem 0;
 }
 .page {
