@@ -22,7 +22,7 @@ const ProductsContext = React.createContext()
 
 export const ProductsProvider = ({ children }) => {
 
-  const [state,dispatch] = useReducer(reducer,initialState);
+  const [state,dispatch] = useReducer(reducer,initialState); //Reducer(imported file) is doing dispatches
   
 
   const openSidebar = ()=>{
