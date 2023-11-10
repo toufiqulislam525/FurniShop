@@ -23,7 +23,7 @@ const SingleProductPage = () => {
     single_product_error: error,
     single_product : product,
     fetchSingleProduct,
-    ErrorFlip
+    ErrorFlip,
   } = useProductsContext();
 
 
