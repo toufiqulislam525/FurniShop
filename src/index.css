@@ -202,5 +202,5 @@ p {
   padding: 5rem 0;
 }
 .page {
-  min-height: calc(100vh - (20vh + 20rem));
+  min-height: calc(100vh - (20vh + 13rem));
 }
