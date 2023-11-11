@@ -30,7 +30,7 @@ const CartButtons = () => {
         type='button' 
         className='auth-btn' 
         onClick={()=>
-          logout({returnTo: window.location.origin})}>
+          logout({returnTo: 'https://toufiqulislam525.github.io/FurniShop'})}>
           Logout <FaUserMinus/>
         </button> : 
         
