@@ -16,7 +16,9 @@ root.render(
     <StrictMode>
         <ProductsProvider>
             <FilterProvider>
-                <App />
+                <CartProvider>
+                    <App />
+                </CartProvider>
             </FilterProvider>
         </ProductsProvider> 
     </StrictMode>
