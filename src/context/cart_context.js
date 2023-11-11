@@ -38,21 +38,26 @@ export const CartProvider = ({ children }) => {
 
   }
   // Remove
-  const removeItem = (id) =>{
+  const removeItem = (iid) =>{
+    dispatch({type:REMOVE_CART_ITEM, payload : iid});
     
   }
 
   //toggle
-  const toggleAmount = (id,value) =>{
+  const toggleAmount = (id,iid,value) =>{
+    dispatch({type: TOGGLE_CART_ITEM_AMOUNT, payload:{id,iid,value}});
+    console.log(iid,value);
 
   }
 
   //clear
   const clearCart = () =>{
+    dispatch({type:CLEAR_CART})
 
   }
 
   useEffect(()=>{
+    dispatch({type:COUNT_CART_TOTALS});
     localStorage.setItem('cart', JSON.stringify(state.cart))
   },[state.cart])
   
