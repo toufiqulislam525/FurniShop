@@ -8,18 +8,15 @@ import { FilterProvider } from './context/filter_context';
 import { CartProvider } from './context/cart_context';
 import { UserProvider } from './context/user_context';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { authConfig } from './auth/auth0-config';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     
     <Auth0Provider
-    domain="dev-p1gix4nnojy5oq4q.jp.auth0.com"
-    clientId="l0GDFkHEBksgjSTwrwFforHPEw1h4PKz"
-    authorizationParams={{
-      redirect_uri: window.location.origin
-    }} 
-    cacheLocation='localstorage'>
+    {...authConfig}
+    >
             <UserProvider>
                 <ProductsProvider>
                     <FilterProvider>
