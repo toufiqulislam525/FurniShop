@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/FurniShop/static/css/main.f858d96e.css",
-    "main.js": "/FurniShop/static/js/main.bdf5c21e.js",
+    "main.js": "/FurniShop/static/js/main.e5819b1a.js",
     "static/media/hero-bcg.jpeg": "/FurniShop/static/media/hero-bcg.a876f19f6786a3aca992.jpeg",
     "static/media/hero-bcg-2.jpeg": "/FurniShop/static/media/hero-bcg-2.789918645915c8acb36f.jpeg",
     "static/media/logo.svg": "/FurniShop/static/media/logo.e160ede5f60532b7d31a12eb2139839e.svg",
     "index.html": "/FurniShop/index.html",
     "main.f858d96e.css.map": "/FurniShop/static/css/main.f858d96e.css.map",
-    "main.bdf5c21e.js.map": "/FurniShop/static/js/main.bdf5c21e.js.map"
+    "main.e5819b1a.js.map": "/FurniShop/static/js/main.e5819b1a.js.map"
   },
   "entrypoints": [
     "static/css/main.f858d96e.css",
-    "static/js/main.bdf5c21e.js"
+    "static/js/main.e5819b1a.js"
   ]
 }
