@@ -186,4 +186,3 @@ const Wrapper = styled.article`
 
 export default CartItem
 
-//Furnishop
