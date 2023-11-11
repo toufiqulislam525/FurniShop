@@ -32,6 +32,9 @@ const FeaturedProducts = () => {
         })
         }
       </div>
+      <Link to='/products' className='btn'>
+        All Products
+      </Link>
     </Wrapper>
   )
 }

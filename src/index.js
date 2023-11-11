@@ -39,9 +39,6 @@ root.render(
 
 );
 
-// dev-p1gix4nnojy5oq4q.jp.auth0.com
-// dev-p1gix4nnojy5oq4q.jp.auth0.com
-// l0GDFkHEBksgjSTwrwFforHPEw1h4PKz
-// http://localhost:3000
+
 
 
