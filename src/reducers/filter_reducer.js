@@ -107,7 +107,7 @@ const filter_reducer = (state, action) => {
       ...state, filtered_products: tempProducts
     }
     
-    return {...state}
+    
 
   }
 

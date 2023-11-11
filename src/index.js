@@ -13,18 +13,35 @@ import { Auth0Provider } from '@auth0/auth0-react';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <StrictMode>
-        <ProductsProvider>
-            <FilterProvider>
-                <CartProvider>
-                    <App />
-                </CartProvider>
-            </FilterProvider>
-        </ProductsProvider> 
-    </StrictMode>
+    
+    <Auth0Provider
+    domain="dev-p1gix4nnojy5oq4q.jp.auth0.com"
+    clientId="l0GDFkHEBksgjSTwrwFforHPEw1h4PKz"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }} 
+    cacheLocation='localstorage'>
+            <UserProvider>
+                <ProductsProvider>
+                    <FilterProvider>
+                        <CartProvider>
+                            <App />
+                        </CartProvider>
+                    </FilterProvider>
+                </ProductsProvider>
+            </UserProvider> 
+            
+
+        </Auth0Provider>
+    
    
 
 
 );
+
+// dev-p1gix4nnojy5oq4q.jp.auth0.com
+// dev-p1gix4nnojy5oq4q.jp.auth0.com
+// l0GDFkHEBksgjSTwrwFforHPEw1h4PKz
+// http://localhost:3000
 
 
