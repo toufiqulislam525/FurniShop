@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Furnishop
+
+***Implemented using : React, Javascript,, Styled Components***<br>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
